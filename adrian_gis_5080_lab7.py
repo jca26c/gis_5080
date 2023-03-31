@@ -18,6 +18,7 @@ except ImportError:
     subprocess.check_call(["python", '-m', 'pip', 'install', 'geemap'])
 
 # Import libraries
+import streamlit as st
 import os
 import ee
 import geemap
