@@ -9,6 +9,7 @@ except ImportError:
 
  # Import libraries
 import os
+import streamlit as st
 import ee
 import geemap
 import ipywidgets as widgets
