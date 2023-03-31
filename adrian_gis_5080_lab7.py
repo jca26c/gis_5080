@@ -27,7 +27,8 @@ fc = ee.FeatureCollection('TIGER/2018/Counties')
 Map.addLayer(fc, {}, 'US Counties')
 
 states = ee.FeatureCollection('TIGER/2018/States')
-Map
+#Map
+Map.to_streamlit()
 
 # Design interactive widgets
 
