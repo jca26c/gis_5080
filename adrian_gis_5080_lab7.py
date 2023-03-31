@@ -29,11 +29,3 @@ Map.addLayer(fc, {}, 'US Counties')
 states = ee.FeatureCollection('TIGER/2018/States')
 #Map
 Map.to_streamlit()
-
-# Design interactive widgets
-
-style = {'description_width': 'initial'}
-
-output_widget = widgets.Output(layout={'border': '1px solid black'})
-output_control = WidgetControl(widget=output_widget, position='bottomright')
-Map.add_control(output_control)
