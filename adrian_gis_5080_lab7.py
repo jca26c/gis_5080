@@ -29,3 +29,4 @@ Map.addLayer(fc, {}, 'US Counties')
 states = ee.FeatureCollection('TIGER/2018/States')
 #Map
 Map.to_streamlit()
+button = st.button("Add dataset to map")
