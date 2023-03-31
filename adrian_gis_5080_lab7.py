@@ -1,13 +1,3 @@
-# !pip install geemap
-
-"""# Using Earth Engine and geemap for mapping surface water dynamics
-
-**Steps to create Landsat timeseries:**
-
-1. Pan and zoom to your area of interest (AOI), and click on the map to select a polygon. Alternatively, you can enable `Use user-drawn AOI` and use the Drawing tools (e.g., rectange) to draw a shape on the map.
-2. Adjust the parameters (e.g., band combination, threshold, color, download chart data) if needed. 
-3. Click the `Submit` button to create timeseries of Landsat imagery and normalized difference indices.
-
 # Check geemap installation
 import subprocess
 
@@ -17,8 +7,7 @@ except ImportError:
     print('geemap package is not installed. Installing ...')
     subprocess.check_call(["python", '-m', 'pip', 'install', 'geemap'])
 
-# Import libraries
-import streamlit as st
+ # Import libraries
 import os
 import ee
 import geemap
@@ -36,11 +25,9 @@ fc = ee.FeatureCollection('TIGER/2018/Counties')
 Map.addLayer(fc, {}, 'US Counties')
 
 states = ee.FeatureCollection('TIGER/2018/States')
-# Map.addLayer(states, {}, 'US States')
-
 Map
 
-# Designe interactive widgets
+# Design interactive widgets
 
 style = {'description_width': 'initial'}
 
@@ -329,4 +316,3 @@ def submit_clicked(b):
         Map.default_style = {'cursor': 'default'}
 
 submit.on_click(submit_clicked)
-
