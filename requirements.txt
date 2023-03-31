@@ -6,6 +6,4 @@ ee
 geemap
 ipywidgets
 bqplot
-pyplot
 ipyleaflet
-WidgetControl
