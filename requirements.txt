@@ -3,4 +3,4 @@ geemap
 ipywidgets
 bqplot
 pyplot
-ipyleaflet
+WidgetControl
