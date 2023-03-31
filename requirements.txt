@@ -1,5 +1,2 @@
 ee
 geemap
-ipywidgets
-bqplot
-pyplot
