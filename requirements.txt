@@ -3,4 +3,3 @@ geemap
 ipywidgets
 bqplot
 pyplot
-WidgetControl
