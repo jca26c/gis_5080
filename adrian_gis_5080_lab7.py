@@ -12,6 +12,7 @@ import os
 import streamlit as st
 import ee
 import geemap
+import geemap.foliumap as geemap
 import ipywidgets as widgets
 from bqplot import pyplot as plt
 from ipyleaflet import WidgetControl
