@@ -29,11 +29,11 @@ Map.addLayer(fc, {}, 'US Counties')
 states = ee.FeatureCollection('TIGER/2018/States')
 #Map
 # Set visualization parameters
-    vis_params = {
-        "min": 0,
-        "max": 4000,
-        "palette": ["006633", "E5FFCC", "662A00", "D8D8D8", "F5F5F5"],
-    }
+vis_params = {
+    "min": 0,
+    "max": 4000,
+    "palette": ["006633", "E5FFCC", "662A00", "D8D8D8", "F5F5F5"],
+}
 Map.to_streamlit()
 
 # Create suite of buttons
