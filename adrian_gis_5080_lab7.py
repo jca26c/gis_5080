@@ -24,12 +24,8 @@ Map.add_basemap('ROADMAP')
 
 # Add Earth Engine data
 # Set visualization parameters
-vis_params = {
-    "min": 0,
-    "max": 4000
-}
 fc = ee.FeatureCollection('TIGER/2018/Counties')
-Map.addLayer(fc,vis_params, 'US Counties')
+Map.addLayer(fc,{"min": 0,"max": 4000}, 'US Counties')
 
 states = ee.FeatureCollection('TIGER/2018/States')
 #Map
