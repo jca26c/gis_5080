@@ -34,8 +34,8 @@ Map.to_streamlit()
 submit = st.button("Submit")
 state = st.text_input("State:", "Tennesse")
 county = st.text_input("County:", "Knox")
-user_radio = st.radio("",("Use user-drawn AOI"))
-download_radio = st.radio("",("Download chart data"))
+user_radio = st.radio("Use user-drawn AOI",(""))
+download_radio = st.radio("Download chart data",(""))
 band_combo = st.selectbox(
     'Band combo',
     ('Red/Green/Blue', 'NIR/Red/Green',  'SWIR2/SWIR1/NIR', 'NIR/SWIR1/Red','SWIR2/NIR/Red', 
