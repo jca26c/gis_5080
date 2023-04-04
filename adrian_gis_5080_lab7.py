@@ -57,4 +57,4 @@ first_band = st.selectbox(
 second_band = st.selectbox(
     '2nd band',
     ('Blue', 'Green','Red','NIR', 'SWIR1', 'SWIR2'))
-threshold = st.slider("Threshold:", min_value=-1, max_value=1, value=0, step=0.01)
+threshold = st.slider("Threshold:", min_value=-1, max_value=1, value=0)
