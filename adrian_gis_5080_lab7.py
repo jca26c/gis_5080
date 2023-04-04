@@ -23,17 +23,17 @@ Map.add_basemap('HYBRID')
 Map.add_basemap('ROADMAP')
 
 # Add Earth Engine data
-fc = ee.FeatureCollection('TIGER/2018/Counties')
-Map.addLayer(fc, {}, 'US Counties')
-
-states = ee.FeatureCollection('TIGER/2018/States')
-#Map
 # Set visualization parameters
 vis_params = {
     "min": 0,
     "max": 4000,
     "palette": ["006633", "E5FFCC", "662A00", "D8D8D8", "F5F5F5"],
 }
+fc = ee.FeatureCollection('TIGER/2018/Counties')
+Map.addLayer(fc, vis_params, 'US Counties')
+
+states = ee.FeatureCollection('TIGER/2018/States')
+#Map
 Map.to_streamlit()
 
 # Create suite of buttons
