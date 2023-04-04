@@ -29,7 +29,10 @@ Map.addLayer(fc, {}, 'US Counties')
 states = ee.FeatureCollection('TIGER/2018/States')
 #Map
 Map.to_streamlit()
+
+# Create suite of buttons
 submit = st.button("Submit")
 state = st.text_input("State:", "Tennesse")
 county = st.text_input("County:", "Knox")
-user_radio = st.radio("Use user-drawn AOI","")
+user_radio = st.radio("","Use user-drawn AOI")
+download_radio = st.radio("","Download chart data")
