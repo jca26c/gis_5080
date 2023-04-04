@@ -40,3 +40,4 @@ band_combo = st.selectbox(
     'Band combo',
     ('Red/Green/Blue', 'NIR/Red/Green',  'SWIR2/SWIR1/NIR', 'NIR/SWIR1/Red','SWIR2/NIR/Red', 
              'SWIR2/SWIR1/Red', 'SWIR1/NIR/Blue', 'NIR/SWIR1/Blue', 'SWIR2/NIR/Green', 'SWIR1/NIR/Red'))
+year_widget = st.slider("Selected year:", min_value=1984, max_value=2020, value=2010)
