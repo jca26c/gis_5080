@@ -7,15 +7,15 @@ except ImportError:
     print('geemap package is not installed. Installing ...')
     subprocess.check_call(["python", '-m', 'pip', 'install', 'geemap'])
 
- # Import libraries
+# Import libraries
 import os
 import streamlit as st
 import ee
 import geemap
 import geemap.foliumap as geemap
-import ipywidgets as widgets
-from bqplot import pyplot as plt
-from ipyleaflet import WidgetControl
+#import ipywidgets as widgets
+#from bqplot import pyplot as plt
+#from ipyleaflet import WidgetControl
 
 # Create an interactive map
 Map = geemap.Map(center=[40, -100], zoom=4, add_google_map=False)
