@@ -1,6 +1,7 @@
 ee
 geemap
 geopandas
+plotly
 keplergl
 streamlit
 streamlit-folium
